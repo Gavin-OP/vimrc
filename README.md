@@ -4,6 +4,13 @@ This is how to install VIM and vconfigure imrc files.
 
 ## Table of Contents
 
+<!-- vim-markdown-toc GFM -->
+
+* [Install](#install)
+* [Configuration](#configuration)
+* [Other Useful Command](#other-useful-command)
+
+<!-- vim-markdown-toc -->
 
 ## Install
 
@@ -62,4 +69,4 @@ This is how to install VIM and vconfigure imrc files.
 - `git status`  
 - `git pull`  
 - `git add [filename]`
-- `git commit -m 'comment inside'`
+- `git commit -m "comment inside"`
