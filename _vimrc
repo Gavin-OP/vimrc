@@ -1,5 +1,3 @@
-source $VIMRUNTIME/vimrc_example.vim
-
 " basic configuration
 set hlsearch
 set relativenumber
@@ -31,12 +29,12 @@ set mouse=a
 set selection=exclusive 
 set selectmode=mouse,key
 set directory=$HOME/.vim/.swp//
-" interesting???
 set undodir=$HOME/.vim/.undo//
 set backupdir=$HOME/.vim/.backup//
 set foldmethod=manual
 set clipboard=unnamed
 set autoread
+
 
 " plug in installation
 call plug#begin('~/.vim/plugged')
@@ -56,20 +54,23 @@ call plug#end()
 " NERDTree Configuration
 map <C-n> :NERDTreeToggle<CR>	" use ctrl + n to open and close NERDTree
 
+
 " NERDCommenter Configuration
 filetype plugin on
 " Add spaces after comment delimiters b" y default
 let g:NERDSpaceDelims = 1
-
 " Set a language to use its alternate delimiters by default
 let g:NERDAltDelims_python= 1
+
 
 " auto-pairs configuration
 au Filetype FILETYPE let b:AutoPairs = {"(": ")"}
 au FileType php      let b:AutoPairs = AutoPairsDefine({'<?' : '?>','<?php': '?>'})
 
+
 " indentLine Configuration
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
 
 " rainbow_parentheses.vim configuration
 au VimEnter * RainbowParenthesesToggle
@@ -96,6 +97,7 @@ let g:rbpt_colorpairs = [
     \ ]
 
 
+
 " F5 to run sh/python3
 set pythonthreedll=D:Python/python311.dll
 map <F5> :call PRUN()<CR>
@@ -109,6 +111,7 @@ func! PRUN()
 
 " autoformatpythonstatement configuration
 autocmd FileType python let g:autoformatpython_enabled = 1
+
 
 " vim-instant-markdown configuration
 let g:instant_markdown_mathjax = 1
@@ -147,4 +150,5 @@ inoremap { {}<ESC>i  "设置{自动补全
 inoremap < <><ESC>i  "设置<自动补全
 inoremap ' ''<ESC>i  "设置'自动补全
 inoremap " ""<ESC>i  "设置"自动补全
+
 
