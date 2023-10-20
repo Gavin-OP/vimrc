@@ -1,22 +1,18 @@
 # vimrc configuration
 
-This is how to install VIM and vconfigure imrc files.
+This is how to install VIM and configure vimrc files.
 
 ## Table of Contents
 
-<!-- vim-markdown-toc GFM -->
 
-* [Install](#install)
-* [Configuration](#configuration)
-* [Other Useful Command](#other-useful-command)
-
-<!-- vim-markdown-toc -->
 
 ## Install
 
 - Install the latest version of VIM in [vim release page](https://github.com/vim/vim-win32-installer/releases).  
 
 - Install NodeJS in [NodeJS download page](https://nodejs.org/en/download).  
+
+- Download curl in [curl download page](https://curl.se/windows/) and put it in the computer path. 
 
 - Install plugin manager `vim-plug`.   
     - For Linux, run the command below to download the `plug.vim` into the directory `~/.vim/autoload`.  
