@@ -66,3 +66,6 @@ This is how to install VIM and configure vimrc files.
 - `git pull`  
 - `git add [filename]`
 - `git commit -m "comment inside"`
+
+## To Do
+- [ ] auto pair configuration error for > and etc. 
