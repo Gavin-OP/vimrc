@@ -12,7 +12,7 @@ This is how to install VIM and configure vimrc files.
 
 - Install NodeJS in [NodeJS download page](https://nodejs.org/en/download).  
 
-- Download curl in [curl download page](https://curl.se/windows/) and put it in the computer path. 
+- Download curl in [curl download page](https://curl.se/windows/) and put it in the computer path. (only for plug-in instant-markdown-preview)
 
 - Install plugin manager `vim-plug`.   
     - For Linux, run the command below to download the `plug.vim` into the directory `~/.vim/autoload`.  

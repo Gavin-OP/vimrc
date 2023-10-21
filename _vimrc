@@ -21,7 +21,7 @@ set expandtab
 set showmatch
 set background=dark
 set wildmenu
-set paste
+" set paste
 set ruler
 set scrolloff=0
 set whichwrap+=<,>,h,l
@@ -45,8 +45,9 @@ Plug 'Yggdroot/indentLine'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'github/copilot.vim'
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install'  }
 Plug 'mzlogin/vim-markdown-toc'
 call plug#end()
 
@@ -150,5 +151,31 @@ inoremap { {}<ESC>i  "设置{自动补全
 inoremap < <><ESC>i  "设置<自动补全
 inoremap ' ''<ESC>i  "设置'自动补全
 inoremap " ""<ESC>i  "设置"自动补全
+
+
+" markdown-preview.nvim configuration
+let g:mkdp_auto_start = 1
+let g:mkdp_preview_options = {
+    \ 'mkit': {},
+    \ 'katex': {},
+    \ 'uml': {},
+    \ 'maid': {},
+    \ 'disable_sync_scroll': 0,
+    \ 'sync_scroll_type': 'middle',
+    \ 'hide_yaml_meta': 1,
+    \ 'sequence_diagrams': {},
+    \ 'flowchart_diagrams': {},
+    \ 'content_editable': v:false,
+    \ 'disable_filename': 0,
+    \ 'toc': {}
+    \ }
+
+" use a custom Markdown style. Must be an absolute path
+" like '/Users/username/markdown.css' or expand('~/markdown.css')
+" let g:mkdp_markdown_css = ''"
+
+" preview page title
+" ${name} will be replace with the file name
+let g:mkdp_page_title = '「${name}」'
 
 
