@@ -68,4 +68,5 @@ This is how to install VIM and configure vimrc files.
 - `git commit -m "comment inside"`
 
 ## To Do
-- [ ] auto pair configuration error for > and etc. 
+- [x] auto pair configuration error for > and etc. 
+- [ ] auto format python configuration

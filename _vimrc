@@ -41,7 +41,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'Yggdroot/indentLine'
-" Plug 'sillybun/autoformatpythonstatement'
+" Plug 'https://github.com/sillybun/autoformatpythonstatement', {'do': './install.sh'}
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'github/copilot.vim'
@@ -86,14 +86,14 @@ let g:rbpt_colorpairs = [
     \ ['darkcyan',    'RoyalBlue3'],
     \ ['darkred',     'SeaGreen3'],
     \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['brown',       'firebrick3'],
-    \ ['gray',        'RoyalBlue3'],
-    \ ['black',       'SeaGreen3'],
-    \ ['darkmagenta', 'DarkOrchid3'],
-    \ ['Darkblue',    'firebrick3'],
-    \ ['darkgreen',   'RoyalBlue3'],
-    \ ['darkcyan',    'SeaGreen3'],
     \ ['darkred',     'DarkOrchid3'],
+    \ ['brown',       'firebrick3'],
+    \ ['black',       'SeaGreen3'],
+    \ ['gray',        'RoyalBlue3'],
+    \ ['darkmagenta', 'DarkOrchid3'],
+    \ ['darkcyan',    'SeaGreen3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['Darkblue',    'firebrick3'],
     \ ['red',         'firebrick3'],
     \ ]
 
@@ -111,32 +111,18 @@ func! PRUN()
 
 
 " autoformatpythonstatement configuration
-autocmd FileType python let g:autoformatpython_enabled = 1
+" autocmd FileType python let g:autoformatpython_enabled = 1
+" let g:python3_host_prog="C:software/Python312/python.exe"
 
 
 " vim-instant-markdown configuration
-let g:instant_markdown_mathjax = 1
-let g:instant_markdown_mermaid = 1
-let g:instant_markdown_port = 8888
+" let g:instant_markdown_mathjax = 1
+" let g:instant_markdown_mermaid = 1
+" let g:instant_markdown_port = 8888
 " let g:instant_markdown_autoscroll = 0
-let g:instant_markdown_theme = 'dark'
+" let g:instant_markdown_theme = 'dark'
 " map <F11> :InstantMarkdownPreview<CR>
 
-
-" vim-table-mode configuration
-" function! s:isAtStartOfLine(mapping)
-  " let text_before_cursor = getline('.')[0 : col('.')-1]
-  " let mapping_pattern = '\V' . escape(a:mapping, '\')
-  " let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
-  " return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
-" endfunction
-
-" inoreabbrev <expr> <bar><bar>
-		  " \ <SID>isAtStartOfLine('\|\|') ?
-		  " \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
-" inoreabbrev <expr> __
-		  " \ <SID>isAtStartOfLine('__') ?
-		 "  \ '<c-o>:silent! TableModeDisable<cr>' : '__'
 
 
 " vim-markdown-toc configuration
@@ -145,12 +131,13 @@ let g:vmt_cycle_list_item_markers=1
 
 
 " auto fillin brackets
-inoremap ( ()<ESC>i  "设置（自动补全
-inoremap [ []<ESC>i  "设置[自动补全
-inoremap { {}<ESC>i  "设置{自动补全
-inoremap < <><ESC>i  "设置<自动补全
-inoremap ' ''<ESC>i  "设置'自动补全
-inoremap " ""<ESC>i  "设置"自动补全
+inoremap ( ()<ESC>i
+inoremap [ []<ESC>i
+inoremap { {}<ESC>i
+inoremap < <><ESC>i 
+inoremap ' ''<ESC>i
+inoremap " ""<ESC>i
+inoremap $ $$<ESC>i
 
 
 " markdown-preview.nvim configuration
