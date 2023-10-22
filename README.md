@@ -69,4 +69,6 @@ This is how to install VIM and configure vimrc files.
 
 ## To Do
 - [x] auto pair configuration error for > and etc. 
+- [ ] enable vim python support  
 - [ ] auto format python configuration
+
