@@ -50,7 +50,15 @@ This is how to install VIM and configure vimrc files.
             mkdir .bakup
             ```
         - Make sure the path for `directory`, `undodir`, `backupdir` match the folder created above.   
-    - For Linux, TBC
+    - For Linux, 
+	- run the following command to create the folders.
+	    ```Shell
+	    mkdir .vim
+	    cd .vim
+	    mkdir .swp
+	    mkdir .undo
+	    mkdir .backup
+	    ```
 
 - Change the path for Python ddl file. 
     - For Windows, TBC
