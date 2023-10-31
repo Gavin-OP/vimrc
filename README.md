@@ -50,7 +50,7 @@ This is how to install VIM and configure vimrc files.
             cd .vim
             mkdir .swp
             mkdir .undo
-            mkdir .bakup
+            mkdir .backup
             ```
         - Make sure the path for `directory`, `undodir`, `backupdir` match the folder created above.   
     - For Linux, 
