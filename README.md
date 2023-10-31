@@ -74,11 +74,11 @@ This is how to install VIM and configure vimrc files.
     
 
 - Install plug-in.[^2]
-
-[^2]: Install `instant-markdown-d` using `[sudo] npm -g install instant-markdown-d`. (If using instant-markdown plugin)  
-
     - Randomly open a file using vim, install all the plug-in using `:PlugInstall`.
     - Randomly open a file using vim, set up `vim-copilot` using `:Copilot setup`, check the status of `vim-copilot` using `:Copilot status`.  
+
+
+[^2]: Install `instant-markdown-d` using `[sudo] npm -g install instant-markdown-d`. (If using instant-markdown plugin)    
 
 ## Other Useful Command
 - `git status`  
