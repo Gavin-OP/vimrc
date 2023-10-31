@@ -38,7 +38,7 @@ This is how to install VIM and configure vimrc files.
         ```Shell
         git clone https://github.com/Gavin-OP/vimrc.git
         ```
-    - For Linux, don't clone the repo, just create a `.vimrc` file in `~`, and copy the `.vimrc_linux` into the Linux `.vimrc` file.  
+    - For Linux, don't clone the repo, just create a `.vimrc` file in `~`, and copy the `_vimrc_linux` into the Linux `.vimrc` file.  
 
 ## Configuration
 - Change the default path of `_vimrc` file.  
