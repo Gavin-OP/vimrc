@@ -29,7 +29,10 @@ This is how to install VIM and configure vimrc files.
         ```Shell
         git clone https://github.com/Gavin-OP/vimrc.git
         ```
-    - For Linux, TBC
+    - For Linux, make sure to add linux ssh into github. Run the command below.
+      	```Shell
+       	git clone git@github.com:Gavin-OP/vimrc.git
+       	```
 
 ## Configuration
 - Change the default path of `_vimrc` file.  
