@@ -42,6 +42,7 @@ Plug 'preservim/nerdcommenter'
 Plug 'Yggdroot/indentLine'
 Plug 'kien/rainbow_parentheses.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'github/copilot.vim'
 call plug#end()
 
