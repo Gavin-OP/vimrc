@@ -31,7 +31,7 @@ set selectmode=mouse,key
 set directory=$HOME/.vim/.swp//
 set undodir=$HOME/.vim/.undo//
 set backupdir=$HOME/.vim/.backup//
-set foldmethod=manual
+set foldmethod=manual 
 set clipboard=unnamed
 set autoread
 
