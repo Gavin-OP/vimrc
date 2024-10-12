@@ -91,6 +91,8 @@ This is how to install VIM and configure vimrc files.
 - [x] auto pair configuration error for > and etc. 
 - [ ] enable vim python support  
 - [ ] auto format python configuration  
-- [ ] plug-in `ctrl-p`  
+- [ ] plug-in `ctrl-p`
+- [ ] easymotion
+- [ ] highlight yank
 
 
