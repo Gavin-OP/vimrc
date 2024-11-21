@@ -12,7 +12,8 @@ This is how to install VIM and configure vimrc files.
 
 - Install the latest version of VIM
     - For Windows, find VIM in [vim release page](https://github.com/vim/vim-win32-installer/releases). 
-    - For Linux, run the following command to update VIM.  
+    - For Linux, run the following command to update VIM.
+
         ```Shell
         sudo add-apt-repository ppa:jonathonf/vim
         sudo apt update
@@ -23,18 +24,21 @@ This is how to install VIM and configure vimrc files.
 - Install NodeJS in [NodeJS download page](https://nodejs.org/en/download).  
 
 - Install plugin manager `vim-plug`.   
-    - For Windows, open command line in directory `the_folder_vim_is_installed\vim90\autoload`, run the command below.  
+    - For Windows, open command line in directory `the_folder_vim_is_installed\vim90\autoload`, run the command below.
+
         ```Shell
         curl -fLo plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         ```
-    - For Linux, run the command below to download the `plug.vim` into the directory `~/.vim/autoload`.  
+    - For Linux, run the command below to download the `plug.vim` into the directory `~/.vim/autoload`.
+
         ```Shell
         curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim  
         ```
 
 
 - Clone the repo.  
-    - For Windows, install git in [git download page](https://git-scm.com/downloads), open command line in directory `C:\User\[username]\`. Run the command below.  
+    - For Windows, install git in [git download page](https://git-scm.com/downloads), open command line in directory `C:\User\[username]\`. Run the command below.
+
         ```Shell
         git clone https://github.com/Gavin-OP/vimrc.git
         ```
@@ -42,7 +46,8 @@ This is how to install VIM and configure vimrc files.
 
 ## Configuration
 - Change the default path of `_vimrc` file.  
-    - For Windows, open command line in directory `the_folder_vim_is_installed\`, open `_vimrc` file using `vim _vimrc`, and add the following code.    
+    - For Windows, open command line in directory `the_folder_vim_is_installed\`, open `_vimrc` file using `vim _vimrc`, and add the following code.
+
         ```shell
         source $HOME/vimrc/_vimrc
         ```
@@ -59,9 +64,11 @@ This is how to install VIM and configure vimrc files.
             mkdir .undo
             mkdir .backup
             ```
+            
         - Make sure the path for `directory`, `undodir`, `backupdir` match the folder created above.   
     - For Linux, 
         - run the following command to create the folders.
+    
             ```Shell
             mkdir .vim
             cd .vim
