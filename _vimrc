@@ -1,7 +1,7 @@
 " basic configuration
-set hlsearch
+set number
 set relativenumber
-set nu
+set hlsearch
 highlight LineNr ctermfg=Grey
 highlight CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=Yellow ctermbg=Black
 " highlight CursorLineNr term=bold ctermfg=Yellow gui=bold guifg=Yellow ctermbg=24
@@ -49,8 +49,12 @@ Plug 'github/copilot.vim'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && npx --yes yarn install'  }
 Plug 'mzlogin/vim-markdown-toc'
+Plug 'machakann/vim-highlightedyank'
 call plug#end()
 
+" set yank highlight
+let g:highlightedyank_highlight_duration = 150
+highlight HighlightedyankRegion ctermbg=DarkGrey guibg=DarkGrey
 
 " NERDTree Configuration
 map <C-n> :NERDTreeToggle<CR>	" use ctrl + n to open and close NERDTree
