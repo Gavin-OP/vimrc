@@ -50,7 +50,8 @@ This is how to install VIM and configure vimrc files.
 
 - Change the path for backup, swap, undo files.  
     - For Windows  
-        - open command line in directory `C:\Users\<user_name>\`, run the following command to create the folders.   
+        - open command line in directory `C:\Users\<user_name>\`, run the following command to create the folders.
+       
             ```Shell
             mkdir .vim
             cd .vim
